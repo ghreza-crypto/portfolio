@@ -35,7 +35,8 @@ header {
   align-content: center;
 }
 
-.logo {
+.logo a{
+  text-decoration: none;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
@@ -83,6 +84,7 @@ header {
 }
 
 .social {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   margin-top: 14px;
