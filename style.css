@@ -91,3 +91,192 @@ header {
   width: 170.17px;
   height: 20px;
 }
+
+/* works */
+#works {
+  padding-top: 114px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#gridlayout {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 88px;
+}
+
+.worksContainer {
+  background-color: #fff;
+  box-sizing: border-box;
+  min-height: 552px;
+  padding-top: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.worksImg {
+  height: 220px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.worksBodytitle {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  margin-bottom: 12px;
+}
+
+.frame2 {
+  margin-bottom: 12px;
+}
+
+.frame2 .name {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+}
+
+.dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 12px;
+  margin-left: 12px;
+  background-color: #c1c7d0;
+  border-radius: 100%;
+}
+
+.role,
+.year {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.workDescription {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: #344563;
+  margin-bottom: 12px;
+}
+
+.worksCategories {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.worksCategories li {
+  height: 24px;
+  background: #ebebff;
+  border-radius: 8px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  padding: 4px 12px;
+  margin-right: 8px;
+}
+
+.worksBtn {
+  box-sizing: border-box;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  background-color: #fff;
+}
+
+/* about me */
+#aboutMe {
+  margin-top: 114px;
+  background: #fff;
+  padding-top: 114px;
+  padding-right: 24px;
+  padding-left: 24px;
+  border-top-right-radius:70px;
+  padding-bottom: 113.85px;
+}
+
+#btnResume {
+  margin-top: 22px;
+}
+
+#aboutSocail {
+  margin-left: 15px;
+}
+
+.skill {
+  margin-top: 60px;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: space-between;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  color: #000;
+  padding-right: 30px;
+}
+
+.skillList {
+  list-style-type: none;
+}
+
+.skillList li {
+  display: flex;
+  align-items: center;
+  height: 66.72px;
+  background: #f7f7f9;
+  border-radius: 8px;
+  margin: 12px;
+}
+
+.skillList li img {
+  padding-left: 12px;
+  padding-right: 16px;
+}
+
+.line {
+  background-color: #dfe1e6;
+}
+
+/* buttons */
+button:hover {
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+  color: #fff;
+}
+
+button:focus {
+  background: #2230d2;
+  color: #fff;
+}
+
+button:disabled {
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
+}
