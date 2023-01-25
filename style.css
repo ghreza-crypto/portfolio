@@ -282,6 +282,8 @@ header {
 }
 
 #contact-form {
+  display: flex;
+  flex-direction: column;
   height: 779px;
   background-color: #6070ff;
   background-image: url('/images/contact-form.png');
@@ -330,6 +332,8 @@ header {
 }
 
 #contact-form form {
+  display: flex;
+  flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
 }
