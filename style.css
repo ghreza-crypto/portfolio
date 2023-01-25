@@ -292,3 +292,16 @@ button:disabled {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
 }
+/* contact form */
+#contact-form{
+  height: 779px;
+  background-color: #6070ff;
+  background-image: url('/images/contact-form.png');
+  background-size: 265px 709px;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+  background-position-y: 21px;
+  border-top-left-radius: 100px;
+  text-align: center;
+}
