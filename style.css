@@ -305,3 +305,56 @@ button:disabled {
   border-top-left-radius: 100px;
   text-align: center;
 }
+
+#contact-form h1 {
+  padding-top: 103px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+}
+
+#contact-form p {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ebebff;
+  margin-left: 24px;
+  margin-right: 24px;
+  text-align: center;
+  margin-bottom: 87px;
+}
+
+#contact-form input[type=text], #contact-form input[type=email] {
+  height: 48px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 118%;
+  color: #172b4d;
+  padding-left: 16px;
+}
+
+#contact-form form {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+#contact-form textarea {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 160%;
+  color: #b3bac5;
+  height: 140px;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  padding-top: 15px;
+  padding-left: 16px;
+}
