@@ -576,4 +576,13 @@ button:disabled {
   .contactFormBg {
     background-color: #fff;
   }
+
+  .transition {
+    transition: all 0.5 ease-out;
+  }
+
+  .transition a:hover, .transition a:focus {
+    background-color: #6070ff;
+    color: #fff;
+  }
 }
