@@ -14,7 +14,7 @@ body {
   min-height: 100vh;
 }
 
-#bg {
+.bg {
   height: 626px;
   background-color: #fff;
   border-bottom-left-radius: 13%;
@@ -24,7 +24,7 @@ header {
   background-color: #fff;
 }
 
-#phone {
+.phone {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -33,6 +33,10 @@ header {
   padding-right: 24px;
   flex-wrap: wrap;
   align-content: center;
+}
+
+.navbarMenue {
+  display: none;
 }
 
 .logo a {
@@ -50,12 +54,12 @@ header {
   height: 24px;
 }
 
-#bio {
+.bio {
   height: 604px;
   display: flex;
   flex-direction: column;
   background-color: #fff;
-  background-image: url("images/header-shapes\ mobile.png");
+  background-image: url("./images/header-mobile.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -94,13 +98,13 @@ header {
 }
 
 /* works */
-#works {
+.works {
   padding-top: 114px;
   padding-left: 24px;
   padding-right: 24px;
 }
 
-#gridlayout {
+.gridlayout {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 88px;
@@ -211,7 +215,7 @@ header {
 }
 
 /* about me */
-#aboutMe {
+.aboutMe {
   margin-top: 114px;
   background: #fff;
   padding-top: 114px;
@@ -221,11 +225,11 @@ header {
   padding-bottom: 113.85px;
 }
 
-#btnResume {
+.btnResume {
   margin-top: 22px;
 }
 
-#aboutSocail {
+.aboutSocail {
   margin-left: 15px;
 }
 
@@ -277,16 +281,16 @@ header {
 }
 
 /* contact form */
-#contactForm-wrapper {
+.contactFormWrapper {
   background-color: #fff;
 }
 
-#contact-form {
+.contactForm {
   display: flex;
   flex-direction: column;
   height: 779px;
   background-color: #6070ff;
-  background-image: url('/images/contact-form.png');
+  background-image: url('./images/contact-form-mobile.png');
   background-size: 265px 709px;
   background-repeat: no-repeat;
   background-position: right;
@@ -296,7 +300,7 @@ header {
   text-align: center;
 }
 
-#contact-form h1 {
+.contactForm h1 {
   padding-top: 103px;
   margin-bottom: 12px;
   font-weight: 700;
@@ -305,7 +309,7 @@ header {
   color: #fff;
 }
 
-#contact-form p {
+.contactForm p {
   font-weight: 400;
   font-size: 20px;
   line-height: 140%;
@@ -316,8 +320,8 @@ header {
   margin-bottom: 87px;
 }
 
-#contact-form input[type=text],
-#contact-form input[type=email] {
+.contactForm input[type=text],
+.contactForm input[type=email] {
   height: 48px;
   width: 100%;
   background-color: #fff;
@@ -331,14 +335,14 @@ header {
   padding-left: 16px;
 }
 
-#contact-form form {
+.contactForm form {
   display: flex;
   flex-direction: column;
   margin-left: 24px;
   margin-right: 24px;
 }
 
-#contact-form textarea {
+.contactForm textarea {
   font-weight: 400;
   font-size: 15px;
   line-height: 160%;
@@ -352,7 +356,7 @@ header {
   padding-left: 16px;
 }
 
-#contact-form button[type=submit] {
+.contactForm button[type=submit] {
   width: 142px;
   height: 48px;
   background: #fff;
@@ -371,21 +375,205 @@ header {
 }
 
 /* buttons */
-#contact-form button[type=submit]:hover,
+.contactForm button[type=submit]:hover,
 button:hover {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   color: #fff;
 }
 
-#contact-form button[type=submit]:focus,
+.contactForm button[type=submit]:focus,
 button:focus {
   background: #2230d2;
   color: #fff;
 }
 
-#contact-form button[type=submit]:disabled,
+.contactForm button[type=submit]:disabled,
 button:disabled {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
+}
+
+@media only screen and (min-width: 768px) {
+  .humbarger {
+    display: none;
+  }
+
+  .navbarMenue {
+    display: inline-block;
+  }
+
+  .navbarMenue ul {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  .navbarMenue ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .phone {
+    height: 72px;
+    padding-left: 155px;
+    padding-right: 154px;
+  }
+
+  .bg {
+    height: 846px;
+    padding-left: 34.6px;
+    padding-right: 8px;
+    padding-top: 49px;
+  }
+
+  .bio {
+    height: 721px;
+    padding-left: 225px;
+    padding-right: 252px;
+    padding-top: 241px;
+    background-image: url('./images/header-desktop.png');
+  }
+
+  /* works */
+  .works {
+    padding-top: 142px;
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+
+  .worksContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 496px;
+    padding: 24px;
+    gap: 22px;
+  }
+
+  .worksImg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .worksBody {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .worksBtn {
+    width: fit-content;
+  }
+
+  .reverse .worksImg {
+    order: 1;
+  }
+
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 142px;
+    padding-left: 142px;
+    padding-right: 142px;
+    padding-bottom: 146px;
+  }
+
+  .aboutMe .myself {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .aboutMe .skills {
+    padding: 24px;
+  }
+
+  .languages,
+  .frameworks {
+    margin-top: 36px;
+    margin-bottom: 23px;
+  }
+
+  .aboutMe .skills .languages {
+    margin-top: 0;
+  }
+
+  .skillList {
+    display: flex;
+  }
+
+  .skillList li {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    align-items: baseline;
+    padding: 12px;
+    justify-content: space-between;
+  }
+
+  .skillList li img {
+    padding: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  .contactFormWrapper {
+    padding-top: 79px;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 49px;
+    background: #6070ff;
+    height: 846px;
+    border-top-left-radius: 150px;
+  }
+
+  .contactForm {
+    background-image: url('./images/contact-form-desktop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 142px;
+    padding-right: 320px;
+    padding-left: 320px;
+    background-color: transparent;
+    background-origin: border-box;
+    height: auto;
+    background-position-y: top;
+    background-position-x: center;
+  }
+
+  .contactForm h1 {
+    padding-top: 0;
+  }
+
+  .contactForm p {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .contactForm form {
+    align-items: center;
+  }
+
+  .contactForm input[type=text],
+  .contactForm input[type=email] {
+    height: 48px;
+    width: 80%;
+    border-radius: 2px;
+  }
+
+  .contactForm textarea {
+    width: 80%;
+    border-radius: 2px;
+  }
+
+  .contactFormBg {
+    background-color: #fff;
+  }
 }

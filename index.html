@@ -12,17 +12,24 @@
 <body>
 
     <header>
-        <nav id="phone">
+        <nav class="phone">
             <div class="logo">
                 <a href="#">My Logo</a>
+            </div>
+            <div class="navbarMenue">
+                <ul>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
             </div>
             <img src="images/humbarger.svg" alt="humbarger" class="humbarger">
         </nav>
     </header>
     <main>
 
-        <section id="bg">
-            <section id="bio">
+        <section class="bg">
+            <section class="bio">
                 <h1 class="title">I’m Mariane Glad to see you!</h1>
                 <p class="about">I’m a software developer! I can help you build a product , feature or website
                     Look
@@ -43,14 +50,14 @@
             </section>
         </section>
         <!-- works section -->
-        <section id="works">
+        <section class="works">
             <!-- grid layout container -->
-            <div id="gridlayout">
+            <div class="gridlayout">
                 <!-- first template -->
-                <div class="worksContainer">
-                    <img src="images/works/work1.png" alt="work1" class="worksImg">
+                <div class="worksContainer ">
+                    <img src="images/works2/work1.png" alt="work1" class="worksImg">
                     <!-- body -->
-                    <div>
+                    <div class="worksBody">
                         <h1 class="worksBodytitle">Tonic</h1>
                         <!-- description -->
                         <div class="frame2">
@@ -77,10 +84,10 @@
                 <!-- end first template -->
 
                 <!-- second template -->
-                <div class="worksContainer">
-                    <img src="images/works/work2.png" alt="work2" class="worksImg">
+                <div class="worksContainer reverse">
+                    <img src="images/works2/work2.png" alt="work2" class="worksImg">
                     <!-- body -->
-                    <div>
+                    <div class="worksBody">
                         <h1 class="worksBodytitle">Multi-Post
                             Stories</h1>
                         <!-- description -->
@@ -109,9 +116,9 @@
 
                 <!-- third template -->
                 <div class="worksContainer">
-                    <img src="images/works/work3.png" alt="work3" class="worksImg">
+                    <img src="images/works2/work3.png" alt="work3" class="worksImg">
                     <!-- body -->
-                    <div>
+                    <div class="worksBody">
                         <h1 class="worksBodytitle">Tonic</h1>
                         <!-- description -->
                         <div class="frame2">
@@ -138,10 +145,10 @@
                 <!-- end third template -->
 
                 <!-- fourth template -->
-                <div class="worksContainer">
-                    <img src="images/works/work4.png" alt="work4" class="worksImg">
+                <div class="worksContainer reverse">
+                    <img src="images/works2/work4.png" alt="work4" class="worksImg">
                     <!-- body -->
-                    <div>
+                    <div class="worksBody">
                         <h1 class="worksBodytitle">Multi-Post
                             Stories</h1>
                         <!-- description -->
@@ -174,57 +181,65 @@
         <!-- end works section -->
 
         <!-- about me -->
-        <section id="aboutMe">
-            <h1 class="title">About Myself</h1>
-            <p class="about">I’m a software developer! I can help you build a product , feature or website Look
-                through
-                some
-                of my work and
-                experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-            </p>
-            <a href="#" class="social-title">LET’S CONNECT</a>
-            <ul class="social " id="aboutSocail">
-                <li><a href="#"><img src="images/social/twitter.svg" alt="twitter"></a></li>
-                <li><a href="#"><img src="images/social/linkedin.svg" alt="linkedin"></a></li>
-                <li><a href="#"><img src="images/social/m.svg" alt="m"></a></li>
-                <li><a href="#"><img src="images/social/github.svg" alt="github"></a></li>
-                <li><a href="#"><img src="images/social/hand.svg" alt="hand"></a></li>
-            </ul>
-            <button class="worksBtn" id="btnResume">Get my resume</button>
-            <div class="languages">
-                <span>Languages</span>
-                <img src="images/skills/chevronDown.svg" alt="chevronDown">
-            </div>
-            <ul class="skillList">
-                <li><img src="images/skills/js.png" alt="javaScript"><span>JavaScript</span></li>
-                <li><img src="images/skills/html.png" alt="html"><span>HTML</span></li>
-                <li><img src="images/skills/css.png" alt="css"><span>CSS</span></li>
-            </ul>
-            <div class="frameworks">
-                <span>Frameworks</span>
-                <img src="images/skills/chevronRight.svg" alt="chevronRight">
-            </div>
-            <hr class="line">
-            <div class="skill">
-                <span>Skills</span>
-                <img src="images/skills/chevronRight.svg" alt="chevronRight">
-            </div>
-            <hr class="line">
+        <section class="aboutMe">
+            <section class="myself">
+                <h1 class="title">About Myself</h1>
+                <p class="about">I’m a software developer! I can help you build a product , feature or website Look
+                    through
+                    some
+                    of my work and
+                    experience! If you like what you see and have a project you need coded, don’t hestiate to contact
+                    me.
+                </p>
+                <a href="#" class="social-title">LET’S CONNECT</a>
+                <ul class="social aboutSocail">
+                    <li><a href="#"><img src="images/social/twitter.svg" alt="twitter"></a></li>
+                    <li><a href="#"><img src="images/social/linkedin.svg" alt="linkedin"></a></li>
+                    <li><a href="#"><img src="images/social/m.svg" alt="m"></a></li>
+                    <li><a href="#"><img src="images/social/github.svg" alt="github"></a></li>
+                    <li><a href="#"><img src="images/social/hand.svg" alt="hand"></a></li>
+                </ul>
+                <button class="worksBtn btnResume">Get my resume</button>
+            </section>
+            <section class="skills">
+                <div class="languages">
+                    <span>Languages</span>
+                    <img src="images/skills/chevronDown.svg" alt="chevronDown">
+                </div>
+                <ul class="skillList">
+                    <li><img src="images/skills/js.png" alt="javaScript"><span>JavaScript</span></li>
+                    <li><img src="images/skills/html.png" alt="html"><span>HTML</span></li>
+                    <li><img src="images/skills/css.png" alt="css"><span>CSS</span></li>
+                </ul>
+                <div class="frameworks">
+                    <span>Frameworks</span>
+                    <img src="images/skills/chevronRight.svg" alt="chevronRight">
+                </div>
+                <hr class="line">
+                <div class="skill">
+                    <span>Skills</span>
+                    <img src="images/skills/chevronRight.svg" alt="chevronRight">
+                </div>
+                <hr class="line">
+            </section>
         </section>
         <!-- end about me -->
         <!-- contact form -->
-        <section id="contactForm-wrapper">
-            <section id="contact-form">
-                <h1>Contact me</h1>
-                <p>If you have an application you are interested in developing, a feature that you need built or a
-                    project
-                    that needs coding. I’d love to help with it </p>
-                <form action="https://formspree.io/f/xzbqdpyz" method="post" >
-                    <input type="text" name="name" placeholder="Type name" required maxlength="30">
-                    <input type="email" name="email" placeholder="Type e-mail" required>
-                    <textarea name="message" placeholder="Write your message here" required maxlength="500"></textarea>
-                    <button type="submit">Get In Touch</button>
-                </form>
+        <section class="contactFormBg">
+            <section class="contactFormWrapper">
+                <section class="contactForm">
+                    <h1>Contact me</h1>
+                    <p>If you have an application you are interested in developing, a feature that you need built or a
+                        project
+                        that needs coding. I’d love to help with it </p>
+                    <form action="https://formspree.io/f/xzbqdpyz" method="post">
+                        <input type="text" name="name" placeholder="Type name" required maxlength="30">
+                        <input type="email" name="email" placeholder="Type e-mail" required>
+                        <textarea name="message" placeholder="Write your message here" required
+                            maxlength="500"></textarea>
+                        <button type="submit">Get In Touch</button>
+                    </form>
+                </section>
             </section>
         </section>
         <!-- end contact form -->
