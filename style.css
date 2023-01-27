@@ -585,4 +585,9 @@ button:disabled {
     background-color: #6070ff;
     color: #fff;
   }
+
+  .logo a {
+    transition: all 0.5 ease-out;
+    transform: rotate(90deg);
+  }
 }
