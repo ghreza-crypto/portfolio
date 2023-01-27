@@ -35,6 +35,10 @@ header {
   align-content: center;
 }
 
+#navbar-menue {
+  display: none;
+}
+
 .logo a {
   text-decoration: none;
   font-weight: 700;
@@ -388,4 +392,188 @@ button:focus {
 button:disabled {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
+}
+
+@media only screen and (min-width: 768px) {
+  .humbarger {
+    display: none;
+  }
+
+  #navbar-menue {
+    display: inline-block;
+  }
+
+  #navbar-menue ul {
+    list-style-type: none;
+    display: flex;
+    gap: 32px;
+  }
+
+  #navbar-menue ul li a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  #phone {
+    height: 72px;
+    padding-left: 155px;
+    padding-right: 154px;
+  }
+
+  #bg {
+    height: 846px;
+    padding-left: 34.6px;
+    padding-right: 8px;
+    padding-top: 49px;
+  }
+
+  #bio {
+    height: 721px;
+    padding-left: 225px;
+    padding-right: 252px;
+    padding-top: 241px;
+    background-image: url('/images/Header-bg-desktop.png');
+  }
+
+  /* works */
+  #works {
+    padding-top: 142px;
+    padding-left: 142px;
+    padding-right: 142px;
+  }
+
+  .worksContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 496px;
+    padding: 24px;
+    gap: 22px;
+  }
+
+  .worksImg {
+    height: 100%;
+    width: 100%;
+  }
+
+  .worksBody {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .worksBtn {
+    width: fit-content;
+  }
+
+  .reverse .worksImg {
+    order: 1;
+  }
+
+  #aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding-top: 142px;
+    padding-left: 142px;
+    padding-right: 142px;
+    padding-bottom: 146px;
+  }
+
+  #aboutMe .myself {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  #aboutMe .skills {
+    padding: 24px;
+  }
+
+  .languages,
+  .frameworks {
+    margin-top: 36px;
+    margin-bottom: 23px;
+  }
+
+  #aboutMe .skills .languages {
+    margin-top: 0;
+  }
+
+  .skillList {
+    display: flex;
+  }
+
+  .skillList li {
+    display: flex;
+    flex-direction: column;
+    width: 122px;
+    height: 120px;
+    align-items: baseline;
+    padding: 12px;
+    justify-content: space-between;
+  }
+
+  .skillList li img {
+    padding: 0;
+    width: 48px;
+    height: 48px;
+  }
+
+  #contactForm-wrapper {
+    padding-top: 79px;
+    padding-right: 75px;
+    padding-left: 75px;
+    padding-bottom: 49px;
+    background: #6070ff;
+    height: 846px;
+    border-top-left-radius: 150px;
+  }
+
+  #contact-form {
+    background-image: url('/images/contact-form-background-shapes.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding-top: 142px;
+    padding-right: 320px;
+    padding-left: 320px;
+    background-color: transparent;
+    background-origin: border-box;
+    height: auto;
+    background-position-y: top;
+    background-position-x: center;
+  }
+
+  #contact-form h1 {
+    padding-top: 0;
+  }
+
+  #contact-form p {
+    margin-bottom: 20px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #contact-form form {
+    align-items: center;
+  }
+
+  #contact-form input[type=text],
+  #contact-form input[type=email] {
+    height: 48px;
+    width: 80%;
+    border-radius: 2px;
+  }
+
+  #contact-form textarea {
+    width: 80%;
+    border-radius: 2px;
+  }
+
+  #contactForm-bg {
+    background-color: #fff;
+  }
 }
