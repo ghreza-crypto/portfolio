@@ -576,9 +576,14 @@ button:disabled {
   .contactFormBg {
     background-color: #fff;
   }
+  .transition a{
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+  }
 
-  .transition {
-    transition: all 0.5 ease-out;
+  .transition a {
+    transition: all 0.5s ease-out;
   }
 
   .transition a:hover, .transition a:focus {
@@ -586,8 +591,17 @@ button:disabled {
     color: #fff;
   }
 
-  .logo a {
-    transition: all 0.5 ease-out;
-    transform: rotate(90deg);
+  .logo:hover {
+    transition: all 1s ease-out;
+    transform: rotate(360deg);
+  }
+ 
+}
+.logo{
+  animation: rotation 2s;
+}
+@keyframes rotation {
+  to{
+    transform: rotate(360deg);
   }
 }
