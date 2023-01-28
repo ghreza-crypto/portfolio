@@ -415,6 +415,10 @@ button:disabled {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    border-radius: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    transition: all 0.5s ease-out;
   }
 
   .phone {
@@ -576,17 +580,9 @@ button:disabled {
   .contactFormBg {
     background-color: #fff;
   }
-  .transition a{
-    border-radius: 10px;
-    padding-left: 7px;
-    padding-right: 7px;
-  }
 
-  .transition a {
-    transition: all 0.5s ease-out;
-  }
-
-  .transition a:hover, .transition a:focus {
+  .transition a:hover,
+  .transition a:focus {
     background-color: #6070ff;
     color: #fff;
   }
@@ -595,13 +591,14 @@ button:disabled {
     transition: all 1s ease-out;
     transform: rotate(360deg);
   }
- 
 }
-.logo{
+
+.logo {
   animation: rotation 2s;
 }
+
 @keyframes rotation {
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
