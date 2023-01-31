@@ -60,7 +60,7 @@
 
 > Here you can find my project demo
 
-- [Live Demo Link](https://github.com/ghreza-crypto/portfolio)
+- [Live Demo Link](https:https://ghreza-crypto.github.io)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
