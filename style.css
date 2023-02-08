@@ -34,11 +34,9 @@ header {
   flex-wrap: wrap;
   align-content: center;
 }
+/* mobile menue section */
 
-.navbarMenue {
-  display: none;
-}
-
+/* end of mobile menue section */
 .logo a {
   text-decoration: none;
   font-weight: 700;
@@ -395,6 +393,7 @@ button:disabled {
 }
 
 @media only screen and (min-width: 768px) {
+ 
   .humbarger {
     display: none;
   }

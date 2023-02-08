@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -16,14 +17,15 @@
             <div class="logo">
                 <a href="#">My Logo</a>
             </div>
-            <div class="navbarMenue">
+            <div class="navbarMenue" id="navbarMenue">
+                <div class="close" onclick="menuseClose();">x</div>
                 <ul>
-                    <li class="transition"><a href="#">Portfolio</a></li>
-                    <li class="transition"><a href="#">About</a></li>
-                    <li class="transition"><a href="#">Contact</a></li>
+                    <li class="transition"><a href="#works" onclick="menuseClose();">Portfolio</a></li>
+                    <li class="transition"><a href="#about" onclick="menuseClose();">About</a></li>
+                    <li class="transition"><a href="#contact" onclick="menuseClose();">Contact</a></li>
                 </ul>
             </div>
-            <img src="images/humbarger.svg" alt="humbarger" class="humbarger">
+            <img src="images/humbarger.svg" alt="humbarger" class="humbarger" onclick="menue();">
         </nav>
     </header>
     <main>
@@ -50,7 +52,7 @@
             </section>
         </section>
         <!-- works section -->
-        <section class="works">
+        <section class="works" id="works">
             <!-- grid layout container -->
             <div class="gridlayout">
                 <!-- first template -->
@@ -181,7 +183,7 @@
         <!-- end works section -->
 
         <!-- about me -->
-        <section class="aboutMe">
+        <section class="aboutMe" id="about">
             <section class="myself">
                 <h1 class="title">About Myself</h1>
                 <p class="about">I’m a software developer! I can help you build a product , feature or website Look
@@ -225,7 +227,7 @@
         </section>
         <!-- end about me -->
         <!-- contact form -->
-        <section class="contactFormBg">
+        <section class="contactFormBg" id="contact">
             <section class="contactFormWrapper">
                 <section class="contactForm">
                     <h1>Contact me</h1>
