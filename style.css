@@ -62,6 +62,27 @@ header {
     border: none;
     font-size: x-large;
   }
+  .navbarMenue ul{
+    list-style-type: none;
+  }
+  .navbarMenue ul li{
+    margin-bottom: 40px;
+  }
+  
+  .navbarMenue ul li a {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #fff;
+  }
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+  left: 0;
+  transition: left 0.8s, visibility 0.8s, opacity 0.4s;
 }
 
 /* end of mobile menue section */
@@ -421,7 +442,9 @@ button:disabled {
 }
 
 @media only screen and (min-width: 768px) {
- 
+  .close{
+    display: none;
+  }
   .humbarger {
     display: none;
   }
