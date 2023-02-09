@@ -42,8 +42,8 @@ header {
     opacity: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(96, 112, 255, 0.95);
-    filter: contrast(1.75);
+    background: rgba(96, 112, 255, 1);
+    filter: contrast(3);
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -87,7 +87,7 @@ header {
 
 .active {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.8;
   left: 0;
   transition: left 0.8s, visibility 0.8s, opacity 0.4s;
 }
