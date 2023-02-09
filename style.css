@@ -35,7 +35,7 @@ header {
   align-content: center;
 }
 
-/* mobile menue section */
+/* mobile menu section */
 @media only screen and (max-width: 768px) {
   .navbarMenue {
     visibility: hidden;
@@ -43,6 +43,7 @@ header {
     width: 100%;
     height: 100vh;
     background: rgba(96, 112, 255, 0.95);
+    filter: contrast(1.75);
     display: flex;
     flex-direction: column;
     position: fixed;
@@ -54,14 +55,17 @@ header {
     z-index: 999;
   }
 
-  .close {
-    text-align: right;
+  .navbarMenuHeader {
+    display: flex;
+    justify-content: end;
     padding-right: 38px;
     padding-top: 40px;
     padding-bottom: 32px;
-    color: #fff;
-    border: none;
-    font-size: x-large;
+  }
+
+  .close {
+    width: 12px;
+    height: 12px;
   }
 
   .navbarMenue ul {
