@@ -121,6 +121,10 @@ npx stylelint "**/*.{css,scss}" --fix
 ```bash
 npx hint .
 ```
+4. To check JavaScript linters error
+```bash
+npx eslint .
+```
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
