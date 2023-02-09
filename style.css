@@ -34,6 +34,7 @@ header {
   flex-wrap: wrap;
   align-content: center;
 }
+
 /* mobile menue section */
 @media only screen and (max-width: 768px) {
   .navbarMenue {
@@ -62,13 +63,15 @@ header {
     border: none;
     font-size: x-large;
   }
-  .navbarMenue ul{
+
+  .navbarMenue ul {
     list-style-type: none;
   }
-  .navbarMenue ul li{
+
+  .navbarMenue ul li {
     margin-bottom: 40px;
   }
-  
+
   .navbarMenue ul li a {
     text-decoration: none;
     font-size: 32px;
@@ -442,9 +445,10 @@ button:disabled {
 }
 
 @media only screen and (min-width: 768px) {
-  .close{
+  .close {
     display: none;
   }
+
   .humbarger {
     display: none;
   }

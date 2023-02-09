@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="./script.js"></script>
     <title>Portfolio</title>
 </head>
 
@@ -18,14 +17,14 @@
                 <a href="#">My Logo</a>
             </div>
             <div class="navbarMenue" id="navbarMenue">
-                <div class="close" onclick="menuseClose();">x</div>
-                <ul>
-                    <li class="transition"><a href="#works" onclick="menuseClose();">Portfolio</a></li>
-                    <li class="transition"><a href="#about" onclick="menuseClose();">About</a></li>
-                    <li class="transition"><a href="#contact" onclick="menuseClose();">Contact</a></li>
+                <div class="close" id="close">x</div>
+                <ul class="navbarLinks">
+                    <li class="transition"><a href="#works">Portfolio</a></li>
+                    <li class="transition"><a href="#about">About</a></li>
+                    <li class="transition"><a href="#contact">Contact</a></li>
                 </ul>
             </div>
-            <img src="images/humbarger.svg" alt="humbarger" class="humbarger" onclick="menue();">
+            <img src="images/humbarger.svg" alt="humbarger" class="humbarger" id="humbarger">
         </nav>
     </header>
     <main>
@@ -246,6 +245,7 @@
         </section>
         <!-- end contact form -->
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
