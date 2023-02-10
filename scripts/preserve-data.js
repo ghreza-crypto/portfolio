@@ -1,28 +1,23 @@
-let contactFormName = document.getElementById('senderName');
-let contactFormMessage = document.getElementById('message');
-let contactFormEmail = document.getElementById('email');
-let saved=localStorage.getItem('contactForm');
+const contactForm = document.getElementById('contactForm');
 
-let form= {
-    name: '',
-    email:'',
-    message: '',
-  };
+const data = {
+  name: String,
+  email: String,
+  message: String,
+};
 
+window.onload = () => {
+  const saved = JSON.parse(localStorage.getItem('contactFormDetails'));
   if (saved) {
-    form = JSON.parse(saved);
-    contactFormName.value = form.name;
-    contactFormMessage.value=form.message;
-    contactFormEmail.value = form.email;
+    document.getElementById('senderName').value = saved.name;
+    document.getElementById('email').value = saved.email;
+    document.getElementById('message').value = saved.message;
   }
+};
 
-  saveForm = (e) => {
-    const element = e.target;
-    form[element.name] = element.value;
-    localStorage.setItem('contactForm', JSON.stringify(form));
-  };
-
-  
-contactFormName.addEventListener('change', saveForm);
-contactFormEmail.addEventListener('change', saveForm);
-contactFormMessage.addEventListener('change', saveForm);
+contactForm.onchange = () => {
+  data.name = document.getElementById('senderName').value;
+  data.email = document.getElementById('email').value;
+  data.message = document.getElementById('message').value;
+  localStorage.setItem('contactFormDetails', JSON.stringify(data));
+};
