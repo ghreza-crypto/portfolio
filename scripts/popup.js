@@ -1,49 +1,57 @@
 const projects = [
-    {
-        id: '1',
-        img: 'images/works2/work1.png',
-        title: 'Tonic',
-        tags: ['Canopy', 'Back End Dev', '2015'],
-        description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        categories: ['html', 'css', 'javascript'],
-        detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"
-    },
+  {
+    id: '1',
+    img: 'images/works2/work1.png',
+    title: 'Tonic',
+    tags: ['Canopy', 'Back End Dev', '2015'],
+    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    categories: ['html', 'css', 'javascript'],
+    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveVersion: '#',
+    source: '#',
+  },
 
-    {
-        id: '2',
-        img: 'images/works2/work2.png',
-        title: 'Multi-Post Stories',
-        tags: ['Canopy', 'Back End Dev', '2015'],
-        description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        categories: ['html', 'css', 'javascript'],
-        detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"
-    },
+  {
+    id: '2',
+    img: 'images/works2/work2.png',
+    title: 'Multi-Post Stories',
+    tags: ['Canopy', 'Back End Dev', '2015'],
+    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    categories: ['html', 'css', 'javascript'],
+    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveVersion: '#',
+    source: '#',
+  },
 
-    {
-        id: '3',
-        img: 'images/works2/work3.png',
-        title: 'Tonic',
-        tags: ['Canopy', 'Back End Dev', '2015'],
-        description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        categories: ['html', 'css', 'javascript'],
-        detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"
-    },
+  {
+    id: '3',
+    img: 'images/works2/work3.png',
+    title: 'Tonic',
+    tags: ['Canopy', 'Back End Dev', '2015'],
+    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    categories: ['html', 'css', 'javascript'],
+    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveVersion: '#',
+    source: '#',
+  },
 
-    {
-        id: '4',
-        img: 'images/works2/work4.png',
-        title: 'Multi-Post Stories',
-        tags: ['Canopy', 'Back End Dev', '2015'],
-        description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-        categories: ['html', 'css', 'javascript'],
-        detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent"
-    },
+  {
+    id: '4',
+    img: 'images/works2/work4.png',
+    title: 'Multi-Post Stories',
+    tags: ['Canopy', 'Back End Dev', '2015'],
+    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    categories: ['html', 'css', 'javascript'],
+    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    liveVersion: '#',
+    source: '#',
+  },
 ];
-let worksGridLayout = document.getElementById('worksGridLayout');
+const worksGridLayout = document.getElementById('worksGridLayout');
 function test(id) {
-    let popup = document.getElementById('popup');
-    let wrapper = document.getElementById('wrapper');
-    let html = `
+  const popup = document.getElementById('popup');
+  const wrapper = document.getElementById('wrapper');
+  const html = `
     <div class="workDetailContainer ">
     <!-- body -->
     <div class="workDetailBody">
@@ -84,18 +92,18 @@ function test(id) {
       </div>
    </div>
     <!-- end body -->
- </div>`
-    wrapper.style.display = 'block';
-    popup.innerHTML = html;
-    popup.style.display = 'block';
-    let workDetailClose = document.getElementById('workDetailClose');
-    workDetailClose.addEventListener('click', () => {
-        wrapper.style.display = 'none';
-        popup.style.display = 'none';
-    });
+ </div>`;
+  wrapper.style.display = 'block';
+  popup.innerHTML = html;
+  popup.style.display = 'block';
+  const workDetailClose = document.getElementById('workDetailClose');
+  workDetailClose.addEventListener('click', () => {
+    wrapper.style.display = 'none';
+    popup.style.display = 'none';
+  });
 }
-projects.forEach(project => {
-    let html = `<div class="worksContainer " id="work${project.id}">
+projects.forEach((project) => {
+  const html = `<div class="worksContainer " id="work${project.id}">
    
    <img src="${project.img}" alt="${project.title}" class="worksImg">
    <!-- body -->
@@ -121,14 +129,14 @@ projects.forEach(project => {
        <button class="worksBtn" id="${project.id}">See Project</button>
   </div>
    <!-- end body -->
-</div>`
-    worksGridLayout.insertAdjacentHTML('afterbegin', html);
+</div>`;
+  worksGridLayout.insertAdjacentHTML('afterbegin', html);
 });
 document.getElementById('work2').classList.add('reverse');
 document.getElementById('work4').classList.add('reverse');
 
 const worksBtn = document.querySelectorAll('.worksBtn');
 worksBtn.forEach((workBtn) => workBtn.addEventListener('click', (e) => {
-    const { id } = e.target;
-    test(id);
+  const { id } = e.target;
+  test(id);
 }));

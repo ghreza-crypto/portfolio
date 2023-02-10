@@ -448,8 +448,9 @@ button:disabled {
   border: 1px solid #c1c7d0;
   color: #5e6c84;
 }
+
 /* work detail section */
-.workDetailWrapper{
+.workDetailWrapper {
   display: none;
   position: fixed;
   top: 0;
@@ -459,10 +460,9 @@ button:disabled {
   mix-blend-mode: multiply;
   backdrop-filter: blur(6px);
   background: rgba(193, 199, 208, 1);
- 
-
 }
-.workDetail{
+
+.workDetail {
   display: none;
   position: fixed;
   top: 0;
@@ -473,9 +473,9 @@ button:disabled {
   padding-right: 16px;
   padding-top: 60px;
   padding-bottom: 50px;
- 
 }
-.workDetailContainer{
+
+.workDetailContainer {
   height: 100%;
   width: 100%;
   background-color: #fff;
@@ -483,37 +483,42 @@ button:disabled {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
-.workDetailBody{
+
+.workDetailBody {
   height: 100%;
   padding: 16px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.workDetailBodyHeader{
+
+.workDetailBodyHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.workDetailDescription{
+
+.workDetailDescription {
   margin-top: 12px;
 }
-.workDetailIcon2{
+
+.workDetailIcon2 {
   width: 24px;
   height: 24px;
 }
-.worksDetailBtn{
+
+.worksDetailBtn {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 2px;
   width: 47%;
 }
-.workDetailFooter{
+
+.workDetailFooter {
   display: flex;
   justify-content: space-around;
   margin-top: 25px;
-  
 }
 
 /* end of work detail section */
@@ -718,32 +723,35 @@ button:disabled {
     transition: all 1s ease-out;
     transform: rotate(360deg);
   }
-  .workDetail{
-padding-right: 142px;
-padding-left: 142px;
-padding-top: 77px;
-padding-bottom: 60px;
+
+  .workDetail {
+    padding-right: 142px;
+    padding-left: 142px;
+    padding-top: 77px;
+    padding-bottom: 60px;
   }
-  .workDetailInstructions{
+
+  .workDetailInstructions {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    
   }
-  .workDetailBody{
-justify-content:start;
+
+  .workDetailBody {
+    justify-content: start;
   }
-  .workDetailImg{
+
+  .workDetailImg {
     width: 100%;
     height: 45%;
     margin-bottom: 40px;
   }
-  .worksDetailBtn{
-    width: 100%;
-  }
-  .workDetailFooter{
+
+  .workDetailFooter {
     gap: 7px;
   }
-  .worksDetailBtn{
+
+  .worksDetailBtn {
+    width: 100%;
     justify-content: space-evenly;
   }
 }
