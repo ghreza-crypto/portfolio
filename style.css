@@ -527,6 +527,12 @@ button:disabled {
 }
 
 /* end of work detail section */
+.emailValidationError {
+  margin-top: -20px;
+  margin-bottom: 15px;
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
   .close {
     display: none;
