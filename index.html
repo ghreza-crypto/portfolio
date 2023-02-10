@@ -115,12 +115,12 @@
                     <p>If you have an application you are interested in developing, a feature that you need built or a
                         project
                         that needs coding. I’d love to help with it </p>
-                    <form action="https://formspree.io/f/xzbqdpyz" method="post" id="form">
-                        <input type="text" name="name" placeholder="Type name" required maxlength="30">
+                    <form action="https://formspree.io/f/xzbqdpyz" method="post" id="contactForm">
+                        <input type="text" name="name" placeholder="Type name" required maxlength="30" id="senderName">
                         <input type="email" name="email" placeholder="Type e-mail" required id="email">
                         <small class="emailValidationError">Email should be in lowercase</small>
                         <textarea name="message" placeholder="Write your message here" required
-                            maxlength="500"></textarea>
+                            maxlength="500" id="message"></textarea>
                         <button type="submit">Get In Touch</button>
                     </form>
                 </section>
@@ -131,6 +131,7 @@
     <script src="./script.js"></script>
     <script src="./scripts/popup.js"></script>
     <script src="./scripts/validation.js"></script>
+    <script src="./scripts/preserve-data.js"></script>
 </body>
 
 </html>
