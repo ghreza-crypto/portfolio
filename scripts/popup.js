@@ -48,10 +48,10 @@ const projects = [
   },
 ];
 const worksGridLayout = document.getElementById('worksGridLayout');
-function test(id) {
+function popupPage(id) {
   const popup = document.getElementById('popup');
   const wrapper = document.getElementById('wrapper');
-  const html = `
+  let html = `
     <div class="workDetailContainer ">
     <!-- body -->
     <div class="workDetailBody">
@@ -60,13 +60,12 @@ function test(id) {
         <i class="" id="workDetailClose"><img src="./images/work-detail-cancel.png" alt="icon-cancel"></i>
         </div>
         <!-- description -->
-        <div class="frame2">
-            <span class="name">${projects[id - 1].tags[0]}</span>
-            <span class="dot"></span>
-            <span class="role">${projects[id - 1].tags[1]}</span>
-            <span class="dot"></span>
-            <span class="year">${projects[id - 1].tags[2]}</span>
-        </div>
+        <div class="frame2">`;
+  projects[id - 1].tags.forEach((tag, i, arr) => {
+    html += `<span class="name">${tag}</span>`;
+    if (arr.length - 1 !== i) { html += '<span class="dot"></span>'; }
+  });
+  html += ` </div>
         <img src="${projects[id - 1].img}" alt="${projects[id - 1].title}" class="workDetailImg">
         <div class="workDetailInstructions">
         <p class="workDescription workDetailDescription">
@@ -74,11 +73,11 @@ function test(id) {
         </p>
         <!-- categories -->
         <div>
-        <ul class="worksCategories">
-            <li>${projects[id - 1].categories[0]}</li>
-            <li>${projects[id - 1].categories[1]}</li>
-            <li>${projects[id - 1].categories[2]}</li>
-        </ul>
+        <ul class="worksCategories">`;
+  projects[id - 1].categories.forEach((category) => {
+    html += `<li>${category}</li>`;
+  });
+  html += `</ul>
         <hr>
         <div class="workDetailFooter">
         <button id="actionbtn" class="worksBtn worksDetailBtn worksDetailBtn " href="${projects[id - 1].liveVersion}">See live
@@ -103,29 +102,28 @@ function test(id) {
   });
 }
 projects.forEach((project) => {
-  const html = `<div class="worksContainer " id="work${project.id}">
+  let html = `<div class="worksContainer " id="work${project.id}">
    
    <img src="${project.img}" alt="${project.title}" class="worksImg">
    <!-- body -->
    <div class="worksBody">
        <h1 class="worksBodytitle">${project.title}</h1>
        <!-- description -->
-       <div class="frame2">
-           <span class="name">${project.tags[0]}</span>
-           <span class="dot"></span>
-           <span class="role">${project.tags[1]}</span>
-           <span class="dot"></span>
-           <span class="year">${project.tags[2]}</span>
-       </div>
+       <div class="frame2">`;
+  project.tags.forEach((tag, i, arr) => {
+    html += `<span class="name">${tag}</span>`;
+    if (arr.length - 1 !== i) { html += '<span class="dot"></span>'; }
+  });
+  html += ` </div>
        <p class="workDescription">
           ${project.description}
        </p>
        <!-- categories -->
-       <ul class="worksCategories">
-           <li>${project.categories[0]}</li>
-           <li>${project.categories[1]}</li>
-           <li>${project.categories[2]}</li>
-       </ul>
+       <ul class="worksCategories">`;
+  project.categories.forEach((category) => {
+    html += `<li>${category}</li>`;
+  });
+  html += `</ul>
        <button class="worksBtn" id="${project.id}">See Project</button>
   </div>
    <!-- end body -->
@@ -138,5 +136,5 @@ document.getElementById('work4').classList.add('reverse');
 const worksBtn = document.querySelectorAll('.worksBtn');
 worksBtn.forEach((workBtn) => workBtn.addEventListener('click', (e) => {
   const { id } = e.target;
-  test(id);
+  popupPage(id);
 }));
