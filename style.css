@@ -188,6 +188,7 @@ header {
   line-height: 44px;
   color: #172b4d;
   margin-bottom: 12px;
+  display: flex;
 }
 
 .frame2 {
@@ -448,6 +449,84 @@ button:disabled {
   color: #5e6c84;
 }
 
+/* work detail section */
+.workDetailWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(6px);
+  background: rgba(193, 199, 208, 1);
+}
+
+.workDetail {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+.workDetailContainer {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+}
+
+.workDetailBody {
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: scroll;
+}
+
+.workDetailBodyHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.workDetailDescription {
+  margin-top: 12px;
+}
+
+.workDetailIcon2 {
+  width: 24px;
+  height: 24px;
+}
+
+.worksDetailBtn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2px;
+  width: 47%;
+}
+
+.workDetailFooter {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 25px;
+}
+
+.workDetailImg {
+  height: 220px;
+}
+
+/* end of work detail section */
 @media only screen and (min-width: 768px) {
   .close {
     display: none;
@@ -648,6 +727,37 @@ button:disabled {
   .logo:hover {
     transition: all 1s ease-out;
     transform: rotate(360deg);
+  }
+
+  .workDetail {
+    padding-right: 142px;
+    padding-left: 142px;
+    padding-top: 77px;
+    padding-bottom: 60px;
+  }
+
+  .workDetailInstructions {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .workDetailBody {
+    justify-content: start;
+  }
+
+  .workDetailImg {
+    width: 100%;
+    height: 45%;
+    margin-bottom: 40px;
+  }
+
+  .workDetailFooter {
+    gap: 7px;
+  }
+
+  .worksDetailBtn {
+    width: 100%;
+    justify-content: space-evenly;
   }
 }
 
