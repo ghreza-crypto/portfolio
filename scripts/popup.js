@@ -1,7 +1,7 @@
 const projects = [
   {
     id: '1',
-    img: 'images/works2/work1.jpg',
+    img: 'images/works2/work1.JPG',
     title: 'Global University Website',
     tags: ['website', 'Front End Dev', '2023'],
     description: 'Global university is a website builds for university.',
