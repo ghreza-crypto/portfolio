@@ -1,14 +1,14 @@
 const projects = [
   {
     id: '1',
-    img: 'images/works2/work1.png',
-    title: 'Tonic',
-    tags: ['Canopy', 'Back End Dev', '2015'],
-    description: ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    img: 'images/works2/work1.jpg',
+    title: 'Global University Website',
+    tags: ['website', 'Front End Dev', '2023'],
+    description: 'Global university is a website builds for university.',
     categories: ['html', 'css', 'javascript'],
-    detail: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
-    liveVersion: '#',
-    source: '#',
+    detail: "Global university is a website builds for university, you can share your courses and information about university. It is build with Html, CSS, JavaScript.",
+    liveVersion: 'https://ghreza-crypto.github.io/global-university/',
+    source: 'https://github.com/ghreza-crypto/global-university',
   },
 
   {
@@ -80,12 +80,12 @@ function popupPage(id) {
   html += `</ul>
         <hr>
         <div class="workDetailFooter">
-        <button id="actionbtn" class="worksBtn worksDetailBtn worksDetailBtn " href="${projects[id - 1].liveVersion}">See live
+        <a id="actionbtn" class="worksBtn worksDetailBtn worksDetailBtn " href="${projects[id - 1].liveVersion}" target="_blank">See live
         <i class="" id=""><img src="./images/workDetailIcon1.png" alt="workDetailIcon1"></i>
-      </button>
-      <button id="actionbtn" class="worksBtn worksDetailBtn worksDetailBtn" href="${projects[id - 1].source}">See source
+      </a>
+      <a id="actionbtn" class="worksBtn worksDetailBtn worksDetailBtn" href="${projects[id - 1].source}" target="_blank">See source
       <i class="" id=""><img src="./images/workDetailIcon2.png" alt="workDetailIcon2" class="workDetailIcon2"></i>
-      </button>
+      </a>
       </div>
       </div>
       </div>
